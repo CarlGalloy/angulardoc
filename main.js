@@ -1,4 +1,4 @@
-(async () => {
+(async () => {'use strict';
 try {
   const manifest = await fetch('ngsw.json').then(res => res.json());
   const lazyUrls = manifest.assetGroups.find(g => g.name === 'docs-lazy').urls;
